@@ -1,0 +1,10 @@
+.autocomplete-data ul {
+	max-height: 0;
+	overflow: hidden;
+	transition: all .3s;
+}
+
+.autocomplete-data input:focus ~ .autocomplete-data ul {
+	max-height: 800px;
+}
+

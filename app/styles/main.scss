@@ -1,0 +1,13 @@
+// bower:scss
+// endbower
+.autocomplete-data {
+  ul {
+  max-height: 0;
+  overflow: hidden;
+}
+
+input:focus ~ ul {
+  max-height: 800px;
+}
+}
+

@@ -1,0 +1,7 @@
+<div class="autocomplete-data">
+	<input type="text" placehodler="insert text here" ng-keyup="autocompleteCtrl.onKeyDown()" ng-model="autocompleteCtrl.text" >
+	<button ng-click="autocompleteCtrl.send()" >Submit</button>
+	<ul>
+		<li ng-repeat="item in autocompleteCtrl.data track by $index" ng-click="autocompleteCtrl.select(item.name)">{{item.name}}</li>
+	</ul>
+</div>
